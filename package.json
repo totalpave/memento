@@ -1,0 +1,41 @@
+{
+  "name": "@totalpave/memento",
+  "version": "0.0.1-dev",
+  "description": "Memento library",
+  "main": "lib/api.js",
+  "types": "lib/api.d.ts",
+  "scripts": {
+    "lint": "node --max_old_space_size=6144 ./node_modules/eslint/bin/eslint.js --ext .ts '?(src|spec)/**/*.ts' --cache",
+    "build": "npm run lint && tsc",
+    "test": "npm run-script lint && nyc --reporter=lcov --reporter=text ts-node ./spec/support/jasmine.ts",
+    "docs": "typedoc --options typedoc.json",
+    "prepublishOnly": "npm run-script build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totalpave/memento.git"
+  },
+  "author": "norman.breau@totalpave.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/totalpave/memento/issues"
+  },
+  "homepage": "https://github.com/totalpave/memento#readme",
+  "devDependencies": {
+    "@totalpave/eslint-plugin": "2.3.3",
+    "@typescript-eslint/eslint-plugin": "2.19.0",
+    "@typescript-eslint/parser": "2.19.0",
+    "eslint": "6.8.0",
+    "@breautek/jasmine": "3.5.1",
+    "jasmine-spec-reporter": "4.2.1",
+    "nyc": "15.0.0",
+    "ts-node": "8.6.2",
+    "tsutils": "3.17.1",
+    "typedoc": "0.16.9",
+    "typescript": "3.7.5"
+  },
+  "dependencies": {
+    "@totalpave/object": "0.0.3",
+    "@types/node": "^12"
+  }
+}

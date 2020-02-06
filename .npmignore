@@ -1,0 +1,11 @@
+.DS_Store
+coverage
+.nyc_output
+node_modules
+spec
+*.tsbuildinfo
+.eslintcache
+nyc.config.js
+typedoc.json
+tsconfig*
+.eslintrc.js
