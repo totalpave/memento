@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "@totalpave/object": "0.0.3",
-    "@types/node": "^12"
+    "@types/node": "14.0.13"
   }
 }
