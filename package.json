@@ -1,6 +1,6 @@
 {
   "name": "@totalpave/memento",
-  "version": "0.0.2-dev",
+  "version": "0.0.2",
   "description": "Memento library",
   "main": "lib/api.js",
   "types": "lib/api.d.ts",
