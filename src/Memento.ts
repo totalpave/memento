@@ -1,10 +1,10 @@
 import { ObjectUtils } from '@totalpave/object';
 
-// import {IMementoChangeset} from './IMementoChangeset';
-
-export class Memento<T/*, K extends keyof T = keyof T*/> {
+/**
+ * An object that holds a state at the moment of creation
+ */
+export class Memento<T> {
     private _data: T;
-    // private _changesets: Array<IMementoChangeset> = [];
 
     public constructor(data: T) {
         this._data = ObjectUtils.clone(data);
